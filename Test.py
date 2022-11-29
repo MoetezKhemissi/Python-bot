@@ -1,5 +1,6 @@
 from binance import Client, ThreadedWebsocketManager, ThreadedDepthCacheManager
 import pandas as pd
+import Utils.Utils as util
 # Get klines of BTCUSDT at 1m interval
 #print(client.klines("BTCUSDT", "1m"))
 # Get last 10 klines of BNBUSDT at 1h interval
@@ -21,9 +22,12 @@ client = Client('IasFiam7yUQneiVx1djOnUdz1vK4rKBlOobk6BkJFX762izFx9r3XBS2lUJT89F
 #    quantity=100)
 #info2 = client.get_account()
 #print(info)
-#for balance in info["balances"]:
-#    for balance2 in info["balances"]:
-#        if(balance["asset"]==balance2["asset"]):
-#            print("currency:",balance["asset"],",value1:",balance["free"],",value2",balance["free"])
+# get pairs
+print(util.Print_Account_Value(client))
 #get all pairs
-print(client.get_recent_trades(symbol='BNBBTC'))
+#print(client.get_recent_trades(symbol='BNBBTC'))
+#info = client.get_account()
+#for currency in info["balances"]:
+#    print(currency["asset"],"/Prices:",currency["free"])
+
+#print(client.get_avg_price(symbol='BNBUSD'))
