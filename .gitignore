@@ -4,3 +4,4 @@ __pycache__\
 build\
 dost\
 ApiFullSetup.egg-info\
+ApiFullSetup\ApiKey.py
