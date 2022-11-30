@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MoetezKhemissi/Python-bot">
-    <img src="Images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Images/logo.png" alt="Logo" width="139" height="108">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
